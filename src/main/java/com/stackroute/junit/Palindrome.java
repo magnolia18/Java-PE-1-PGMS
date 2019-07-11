@@ -12,7 +12,7 @@ public class Palindrome {
             sum = (sum * 10) + rem;
             n1 = n1 / 10;
         }
-        if (sum == number)
+        if ((sum != 0) & (sum < 0) & (sum == number))
         {
             while (n1 > 0)
             {
