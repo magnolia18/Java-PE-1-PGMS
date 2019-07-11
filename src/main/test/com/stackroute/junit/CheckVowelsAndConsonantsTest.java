@@ -43,6 +43,13 @@ public class CheckVowelsAndConsonantsTest {
 
 
     }
+      public void InputIsNull() {
+        //Act
+
+        String result = obj.checkVowelOrConsonant("");
+        //Assert
+        assertEquals("", "No input given", result);
+    }
     public void givenStringShouldReturnZeroNumberofVowelsandConsonants() {
         //Act
 
