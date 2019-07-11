@@ -7,26 +7,28 @@ public class CheckVowelsAndConsonants
     {
         int i;
 
-        String str="";
+        String str = "";
+        String nullVar = null;
 
-        for(i=0;i<letter.length();i++)
+        if(str != nullVar) {
+            for (i = 0; i < letter.length(); i++) {
+                char c = letter.charAt(i);
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+                        c == 'A' || c == 'E' || c == 'O' || c == 'U') {
+                    str = str + "vowel" + " ";
+
+                } else {
+                    str = str + "consonant" + " ";
+
+                }
+
+
+            }
+        }
+        else
         {
-            char c= letter.charAt(i);
-            if(c=='a' || c=='e'||c=='i' ||c=='o'||c=='u' ||
-                    c=='A' || c=='E' || c=='O' || c=='U')
-            {
-                str= str+"vowel"+" ";
-
-            }
-            else
-            {
-                str=str+"consonant"+" ";
-
-            }
-
-
+            System.out.println("No input given");
         }
         return str.trim();
-    }
 
 }
