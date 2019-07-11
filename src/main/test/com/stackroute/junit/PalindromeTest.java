@@ -66,5 +66,16 @@ public class PalindromeTest {
 
 
     }
+    
+    @Test
+    public void checkForZeroOrNegativeInput()
+    {
+        //Act
+
+        String result = obj.checkPalindromeNumber(0);
+        //Assert
+        assertEquals("","0 is not a palindrome",result);
+
+    }
 
 }
